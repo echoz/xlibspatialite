@@ -3,5 +3,6 @@
 //
 
 #ifdef __OBJC__
-    #import <Foundation/Foundation.h>
 #endif
+
+#define VERSION "3.0.1"
