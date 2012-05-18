@@ -1,0 +1,232 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F73F87A1566E66900408390 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73F8791566E66900408390 /* Foundation.framework */; };
+		3F73F8801566E66900408390 /* libspatialite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F73F87F1566E66900408390 /* libspatialite.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F73F8761566E66900408390 /* liblibspatialite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibspatialite.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F73F8791566E66900408390 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F73F87D1566E66900408390 /* libspatialite-Prefix.pch */ = {isa = PBXFileReference; path = "libspatialite-Prefix.pch"; sourceTree = "<group>"; };
+		3F73F87E1566E66900408390 /* libspatialite.h */ = {isa = PBXFileReference; path = libspatialite.h; sourceTree = "<group>"; };
+		3F73F87F1566E66900408390 /* libspatialite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libspatialite.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F73F8731566E66900408390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F73F87A1566E66900408390 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F73F86B1566E66900408390 = {
+			isa = PBXGroup;
+			children = (
+				3F73F87B1566E66900408390 /* libspatialite */,
+				3F73F8781566E66900408390 /* Frameworks */,
+				3F73F8771566E66900408390 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F73F8771566E66900408390 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F73F8761566E66900408390 /* liblibspatialite.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F73F8781566E66900408390 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F73F8791566E66900408390 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F73F87B1566E66900408390 /* libspatialite */ = {
+			isa = PBXGroup;
+			children = (
+				3F73F87E1566E66900408390 /* libspatialite.h */,
+				3F73F87F1566E66900408390 /* libspatialite.m */,
+				3F73F87C1566E66900408390 /* Supporting Files */,
+			);
+			path = libspatialite;
+			sourceTree = "<group>";
+		};
+		3F73F87C1566E66900408390 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F73F87D1566E66900408390 /* libspatialite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3F73F8741566E66900408390 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3F73F8751566E66900408390 /* libspatialite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F73F8831566E66900408390 /* Build configuration list for PBXNativeTarget "libspatialite" */;
+			buildPhases = (
+				3F73F8721566E66900408390 /* Sources */,
+				3F73F8731566E66900408390 /* Frameworks */,
+				3F73F8741566E66900408390 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libspatialite;
+			productName = libspatialite;
+			productReference = 3F73F8761566E66900408390 /* liblibspatialite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F73F86D1566E66900408390 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = ORNYX;
+			};
+			buildConfigurationList = 3F73F8701566E66900408390 /* Build configuration list for PBXProject "libspatialite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F73F86B1566E66900408390;
+			productRefGroup = 3F73F8771566E66900408390 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F73F8751566E66900408390 /* libspatialite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F73F8721566E66900408390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F73F8801566E66900408390 /* libspatialite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F73F8811566E66900408390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F73F8821566E66900408390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F73F8841566E66900408390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libspatialite.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libspatialite/libspatialite-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3F73F8851566E66900408390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libspatialite.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libspatialite/libspatialite-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F73F8701566E66900408390 /* Build configuration list for PBXProject "libspatialite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F73F8811566E66900408390 /* Debug */,
+				3F73F8821566E66900408390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F73F8831566E66900408390 /* Build configuration list for PBXNativeTarget "libspatialite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F73F8841566E66900408390 /* Debug */,
+				3F73F8851566E66900408390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F73F86D1566E66900408390 /* Project object */;
+}
