@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3F7300901566EEB100408390 /* geos_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F73FEA81566EEB000408390 /* geos_c.cpp */; };
 		3F7300921566EEB100408390 /* geos_ts_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F73FEAB1566EEB000408390 /* geos_ts_c.cpp */; };
-		3F73047A1566EED900408390 /* libgeos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73FE921566EE4200408390 /* libgeos.a */; };
 		3F7305371566EF3D00408390 /* aasincos.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F73048C1566EF3D00408390 /* aasincos.c */; };
 		3F7305381566EF3D00408390 /* adjlon.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F73048D1566EF3D00408390 /* adjlon.c */; };
 		3F7305391566EF3D00408390 /* bch2bps.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F73048E1566EF3D00408390 /* bch2bps.c */; };
@@ -169,7 +168,6 @@
 		3F7305D91566EF3D00408390 /* proj.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F7305321566EF3D00408390 /* proj.c */; };
 		3F7305DB1566EF3D00408390 /* rtodms.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F7305351566EF3D00408390 /* rtodms.c */; };
 		3F7305DC1566EF3D00408390 /* vector1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F7305361566EF3D00408390 /* vector1.c */; };
-		3F7305DF1566EF4B00408390 /* libproj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7304811566EEEA00408390 /* libproj.a */; };
 		3F73077F1566F8B600408390 /* Angle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F7306011566F8B600408390 /* Angle.cpp */; };
 		3F7307801566F8B600408390 /* BoundaryNodeRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F7306021566F8B600408390 /* BoundaryNodeRule.cpp */; };
 		3F7307811566F8B600408390 /* CentroidArea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F7306031566F8B600408390 /* CentroidArea.cpp */; };
@@ -1471,8 +1469,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F7305DF1566EF4B00408390 /* libproj.a in Frameworks */,
-				3F73047A1566EED900408390 /* libgeos.a in Frameworks */,
 				3F73FE801566EA8E00408390 /* libstdc++.dylib in Frameworks */,
 				3F73F8AD1566E76400408390 /* libcharset.dylib in Frameworks */,
 				3F73F8AB1566E74400408390 /* libiconv.dylib in Frameworks */,
@@ -3844,7 +3840,11 @@
 					"\"$(SRCROOT)/proj\"",
 					"\"$(SRCROOT)/geos/capi\"",
 				);
-				OTHER_CFLAGS = "-DOMIT_FREEXL";
+				OTHER_CFLAGS = (
+					"-DOMIT_FREEXL",
+					"-DOMIT_PROJ",
+					"-DOMIT_GEOS",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -3863,7 +3863,11 @@
 					"\"$(SRCROOT)/proj\"",
 					"\"$(SRCROOT)/geos/capi\"",
 				);
-				OTHER_CFLAGS = "-DOMIT_FREEXL";
+				OTHER_CFLAGS = (
+					"-DOMIT_FREEXL",
+					"-DOMIT_PROJ",
+					"-DOMIT_GEOS",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
