@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F2878091567AF700076C106 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2878081567AF700076C106 /* libsqlite3.dylib */; };
 		3F7300901566EEB100408390 /* geos_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F73FEA81566EEB000408390 /* geos_c.cpp */; };
 		3F7300921566EEB100408390 /* geos_ts_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F73FEAB1566EEB000408390 /* geos_ts_c.cpp */; };
 		3F7305371566EF3D00408390 /* aasincos.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F73048C1566EF3D00408390 /* aasincos.c */; };
@@ -443,6 +442,7 @@
 		3F73F8AB1566E74400408390 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73F8AA1566E74300408390 /* libiconv.dylib */; };
 		3F73F8AD1566E76400408390 /* libcharset.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73F8AC1566E76400408390 /* libcharset.dylib */; };
 		3F73FE801566EA8E00408390 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73FE7F1566EA8E00408390 /* libstdc++.dylib */; };
+		3FF765F915681E7A002541F2 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F73F8A71566E68F00408390 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DSQLITE_OMIT_COMPILEOPTION_DIAGS -DSQLITE_OMIT_DEPRECATED"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1453,7 +1453,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F2878091567AF700076C106 /* libsqlite3.dylib in Frameworks */,
 				3F73FE801566EA8E00408390 /* libstdc++.dylib in Frameworks */,
 				3F73F8AD1566E76400408390 /* libcharset.dylib in Frameworks */,
 				3F73F8AB1566E74400408390 /* libiconv.dylib in Frameworks */,
@@ -3434,6 +3433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF765F915681E7A002541F2 /* sqlite3.c in Sources */,
 				3F73F8A81566E68F00408390 /* spatialite.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
