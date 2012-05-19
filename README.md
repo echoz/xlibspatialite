@@ -7,5 +7,5 @@ By default, the project just builds the libspatialite library without GEOS and P
 
 Should these libraries need to be built and included, just link the libspatialite target with the GEOS and PROJ libraries and remove the C Flags of `OMIT_GEOS` and `OMIT_PROJ`, clean and rebuild.
 
-# Currently
-5.7mb when built with spatialite and the sqlite3 + RTree + FTS3 amalgamation.
+## Currently
+5.7mb when built with spatialit (-GEOS -PROJ)e and the sqlite3 (+RTree +FTS3) amalgamation.
