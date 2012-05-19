@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2878091567AF700076C106 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2878081567AF700076C106 /* libsqlite3.dylib */; };
 		3F7300901566EEB100408390 /* geos_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F73FEA81566EEB000408390 /* geos_c.cpp */; };
 		3F7300921566EEB100408390 /* geos_ts_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F73FEAB1566EEB000408390 /* geos_ts_c.cpp */; };
 		3F7305371566EF3D00408390 /* aasincos.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F73048C1566EF3D00408390 /* aasincos.c */; };
@@ -439,30 +440,13 @@
 		3F73088D1566F8B600408390 /* math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F73077D1566F8B600408390 /* math.cpp */; };
 		3F73088E1566F8B600408390 /* Profiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F73077E1566F8B600408390 /* Profiler.cpp */; };
 		3F73F8A81566E68F00408390 /* spatialite.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F73F8A61566E68F00408390 /* spatialite.c */; };
-		3F73F8A91566E68F00408390 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F73F8A71566E68F00408390 /* sqlite3.c */; };
 		3F73F8AB1566E74400408390 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73F8AA1566E74300408390 /* libiconv.dylib */; };
 		3F73F8AD1566E76400408390 /* libcharset.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73F8AC1566E76400408390 /* libcharset.dylib */; };
 		3F73FE801566EA8E00408390 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73FE7F1566EA8E00408390 /* libstdc++.dylib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3F73047B1566EEDD00408390 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3F73F86D1566E66900408390 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F73FE911566EE4200408390;
-			remoteInfo = geos;
-		};
-		3F7305DD1566EF4500408390 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3F73F86D1566E66900408390 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F7304801566EEEA00408390;
-			remoteInfo = proj;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		3F2878081567AF700076C106 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		3F7304811566EEEA00408390 /* libproj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libproj.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F73048C1566EF3D00408390 /* aasincos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aasincos.c; sourceTree = "<group>"; };
 		3F73048D1566EF3D00408390 /* adjlon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adjlon.c; sourceTree = "<group>"; };
@@ -1469,6 +1453,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2878091567AF700076C106 /* libsqlite3.dylib in Frameworks */,
 				3F73FE801566EA8E00408390 /* libstdc++.dylib in Frameworks */,
 				3F73F8AD1566E76400408390 /* libcharset.dylib in Frameworks */,
 				3F73F8AB1566E74400408390 /* libiconv.dylib in Frameworks */,
@@ -3091,6 +3076,7 @@
 		3F73F8781566E66900408390 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F2878081567AF700076C106 /* libsqlite3.dylib */,
 				3F7305F91566F17B00408390 /* libc++.dylib */,
 				3F73FE7F1566EA8E00408390 /* libstdc++.dylib */,
 				3F73F8AC1566E76400408390 /* libcharset.dylib */,
@@ -3226,8 +3212,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3F7305DE1566EF4500408390 /* PBXTargetDependency */,
-				3F73047C1566EEDD00408390 /* PBXTargetDependency */,
 			);
 			name = libspatialite;
 			productName = libspatialite;
@@ -3451,7 +3435,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F73F8A81566E68F00408390 /* spatialite.c in Sources */,
-				3F73F8A91566E68F00408390 /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3736,19 +3719,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3F73047C1566EEDD00408390 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F73FE911566EE4200408390 /* geos */;
-			targetProxy = 3F73047B1566EEDD00408390 /* PBXContainerItemProxy */;
-		};
-		3F7305DE1566EF4500408390 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F7304801566EEEA00408390 /* proj */;
-			targetProxy = 3F7305DD1566EF4500408390 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		3F73048A1566EEEA00408390 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3832,6 +3802,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/libspatialite.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libspatialite/libspatialite-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3840,6 +3811,7 @@
 					"\"$(SRCROOT)/proj\"",
 					"\"$(SRCROOT)/geos/capi\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DOMIT_FREEXL",
 					"-DOMIT_PROJ",
@@ -3848,6 +3820,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -3855,6 +3828,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/libspatialite.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libspatialite/libspatialite-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3863,6 +3838,7 @@
 					"\"$(SRCROOT)/proj\"",
 					"\"$(SRCROOT)/geos/capi\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-DOMIT_FREEXL",
 					"-DOMIT_PROJ",
@@ -3871,6 +3847,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
