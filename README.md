@@ -9,3 +9,6 @@ Should these libraries need to be built and included, just link the libspatialit
 
 ## Currently
 5.7mb when built with spatialit (-GEOS -PROJ)e and the sqlite3 (+RTree +FTS3) amalgamation.
+
+## Caveat
+If you want things like distance between points, it is inevitable that you ahve to include the GEOS and PROJ packages which does bring SQLite to 43mb. ()[http://www.gaia-gis.it/gaia-sins/spatialite-sql-3.0.0.html#p13]
